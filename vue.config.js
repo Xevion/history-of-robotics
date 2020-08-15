@@ -1,4 +1,6 @@
 module.exports = {
+    outputDir: './docs/',
+    publicPath: '/history-of-robotics/',
     chainWebpack: config => {
         config.module
             .rule('vue')
