@@ -1,12 +1,11 @@
 <template>
     <div id="app">
-        <b-navbar>
+        <b-navbar sticky fixed=true>
+            <b-navbar-brand class="px-2 pl-3 exo-2 font-weight-normal text-white" style="font-size: 1.5em;">
+                Sojourner & Spirit
+            </b-navbar-brand>
             <b-navbar-nav v-b-scrollspy:content>
-                <b-navbar-brand class="px-2 pl-3 exo-2 font-weight-normal text-white" style="font-size: 1.5em;">
-                    Sojourner & Spirit
-                </b-navbar-brand>
-                <b-nav-item href="#sojourner" link-classes="open-sans text-white"
-                            @click="scrollIntoView">
+                <b-nav-item href="#sojourner" link-classes="open-sans text-white" @click="scrollIntoView">
                     Sojourner
                 </b-nav-item>
                 <b-nav-item href="#spirit" link-classes="open-sans text-white" @click="scrollIntoView">
@@ -17,7 +16,7 @@
         <div id="content" ref="content">
             <b-jumbotron fluid container-fluid class="text-dark my-0 py-md-5 py-sm-0 px-md-5 px-sm-3">
                 <b-row class="px-sm-3 px-md-3 w-100" align-h="around">
-                    <b-col md="6" xl="5" align-self="center">
+                    <b-col md="6" xl="7" align-self="top">
                         <h1 id="sojourner">
                             Sojourner
                         </h1>
@@ -40,39 +39,64 @@
                         </p>
                     </b-col>
                     <b-col md="6" xl="3" align-h="center" class="w-100 h-100">
-                        <b-carousel
-                                :interval="4000"
-                                img-width="400"
-                                img-height="400"
-                                style="text-shadow: 6px 5px 8px black;"
-                        >
-                            <b-carousel-slide
-                                    caption="Mars Pathfinder Logo"
-                                    img-src="./assets/pathfinder_logo.jpg"></b-carousel-slide>
-                            <b-carousel-slide
-                                    caption="Sojourner Rover"
-                                    img-src="./assets/sojourner.jpg"></b-carousel-slide>
-                        </b-carousel>
-                        <b-img fluid-grow src=""></b-img>
+                        <b-img fluid-grow src="./assets/sojourner.jpg"></b-img>
+                        <p class="text-center">
+                            <em>Sojourner</em>
+                        </p>
                     </b-col>
                 </b-row>
             </b-jumbotron>
             <b-jumbotron fluid container-fluid class="bg-black my-0 py-md-5 py-sm-0 px-md-5 px-sm-3">
                 <b-row class="px-sm-3 px-md-3 w-100" align-h="around">
-                    <b-col md="6" xl="3" align-h="center">
-                        <b-carousel
-                                :interval="4000"
-                                img-height="400"
-                                img-width="400"
-                                style="text-shadow: 6px 5px 8px black;"
-                        >
-                            <b-carousel-slide
-                                    caption="Spirit Rover"
-                                    img-src="./assets/spirit.jpg"></b-carousel-slide>
-                        </b-carousel>
-                        <b-img fluid-grow src=""></b-img>
+                    <b-col md="6" xl="5" align-self="center">
+                        <h2>Autonomy</h2>
+                        <p class="ml-3 ml-xl-4">
+                            Sojourner was an important step in Robotics due to the nature of the mission.
+                            With such a long distance between Mars and Earth, radio communications took around 14
+                            minutes to receive, and then another 14 minutes to send back.
+                        </p>
+                        <p class="ml-3 ml-xl-4">
+                            As such, human telegraphed movements too slow for the mission, and while complete autopilot
+                            is impossible for such a complex mission, the rovers, landers, and spacecraft made by NASA
+                            had to be programmer with autopilot.
+                        </p>
+                        <p class="ml-3 ml-xl-4">
+                            To solve this problem, Sojourner, along with every rover to land on Mars, is equipped with
+                            software dedicated to autonomously moving the rover across the martian surface.
+                        </p>
+                        <p class="ml-3 ml-xl-4">
+                            While Sojourner was comparatively basic in it's software's autonomy, the software was helpful to operators
+                            in visualizing and telegraphing instructions across the rocky terrain of Ares Vallis.
+                        </p>
                     </b-col>
-                    <b-col class="ml-n5" md="6" xl="5" align-self="center">
+                    <b-col md="6" xl="5" align-h="center" class="w-100 h-100">
+                        <h2>Communications</h2>
+                        <p class="ml-4">
+                            Sojourner is unique among the 4 rovers to successfully deploy on Mars in that it required
+                            it's lander to stay in communication with Earth. The rover was not equipped with a high gain
+                            antenna, which is required in order to communicate with Earth over large distances.
+                        </p>
+                        <p class="ml-4">
+                            This limitation forced the rover to stay within a certain range of the lander, and throughout
+                            it's lifetime on Mars, it never traveled more than a few dozen feet from the lander.
+                        </p>
+                        <h2>Tools</h2>
+                        <p class="ml-4">
+                            Sojourner was designed to study the surface of Mars by collecting and analyzing rock samples,
+                            taking pictures and more.
+                        </p>
+                    </b-col>
+                </b-row>
+            </b-jumbotron>
+            <b-jumbotron fluid container-fluid class="text-dark my-0 py-md-5 py-sm-0 px-md-5 px-sm-3">
+                <b-row class="px-sm-3 px-md-3 w-100" align-h="around">
+                    <b-col md="6" xl="3" align-h="center">
+                        <b-img fluid-grow class="shadow-lg" src="./assets/spirit.jpg"></b-img>
+                        <p class="text-center">
+                            <em>Spirit</em>
+                        </p>
+                    </b-col>
+                    <b-col class="ml-n5" md="6" xl="7" align-self="top">
                         <h1 id="spirit">
                             Spirit
                         </h1>
@@ -81,10 +105,11 @@
                                 title="Spirit and Opportunity were launched separately, 3 days apart.">with it's
                             twin</abbr>, Opportunity, on
                             <em class="text-nowrap" :title="this.moments.spirit.launch.fromNow()">
-                                {{ this.moments.spirit.launch.format("MMMM Do, YYYY") }}</em>, and on
+                                {{ this.moments.spirit.launch.format("MMMM Do, YYYY") }}</em>.
+                            And on
                             <em :title="this.moments.sojourner.landing.fromNow()">
-                                {{ this.moments.spirit.landing.format("MMMM Do, YYYY") }}
-                            </em>, it became the 2nd rover to arrive on the red planet.
+                                {{ this.moments.spirit.landing.format("MMMM Do, YYYY") }}</em>,
+                            it became the 2nd rover to arrive on the red planet.
                         </p>
                         <p class="ml-4">
                             Spirit was planned with just a 90 day mission in mind, but like it's twin, Spirit outlasted
@@ -124,7 +149,7 @@
         color: $white;
     }
 
-    .nav {
+    .navbar {
         @extend .bg-black;
     }
 
