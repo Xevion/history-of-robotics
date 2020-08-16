@@ -23,15 +23,15 @@
                         <p class="ml-4">
                             Launched into space on
                             <em class="text-nowrap" :title="this.moments.sojourner.launch.fromNow()">
-                                {{ this.moments.sojourner.launch.format("MMMM Do, YYYY") }}
-                            </em>,
+                                {{ this.moments.sojourner.launch.format("MMMM Do, YYYY") }}</em>,
                             Sojourner is the first wheeled vehicle to rove upon another planet - Mars.
                             It landed on <em class="text-nowrap" :title="this.moments.sojourner.landing">July 4th,
                             1997</em> in the <em>Ares Vallis</em> region.
                         </p>
                         <p class="ml-4">
                             Despite it's original mission duration planned to be just 7 days, it stayed active for 83
-                            days in total.
+                            days in total. This rover paved the way for remote exploration on Mars, becoming the
+                            blueprint for 3 more rovers.
                         </p>
                     </b-col>
                     <b-col md="6" xl="3" align-h="center" class="w-100 h-100">
@@ -42,7 +42,7 @@
             <b-jumbotron fluid container-fluid class="bg-black my-0 py-md-5 py-sm-0 px-md-5 px-sm-3">
                 <b-row class="px-sm-3 px-md-3 w-100" align-h="around">
                     <b-col md="6" xl="6" align-self="top">
-                        <h2>Communications</h2>
+                        <h3>Communications</h3>
                         <p class="ml-4">
                             Sojourner is unique among the 4 rovers to successfully deploy on Mars in that it required
                             it's lander to stay in communication with Earth. The rover was not equipped with a high gain
@@ -53,7 +53,7 @@
                             throughout it's lifetime on Mars, it never traveled more than a few dozen feet from the
                             lander.
                         </p>
-                        <h2>Tools</h2>
+                        <h3>Tools</h3>
                         <p class="ml-4 mb-1">
                             Sojourner was designed to study the surface of Mars by collecting and analyzing rock
                             samples, taking pictures and more using the following tools:
@@ -65,20 +65,17 @@
                             </li>
                             <li>
                                 <em>Rover Control Software</em> for coordinating movement, studying terrain features,
-                                and viewing
-                                the nearby area in 3D space.
+                                and viewing the nearby area in 3D space.
                             </li>
                             <li>
-                                <em>Three cameras</em>, one color, two monochrome. However, the operators used images
-                                from the
-                                lander's
-                                IMP camera system primarily, as it had higher quality on top of having a height
-                                advantage over the rover.
+                                <em>Three cameras</em>, one color, two monochrome. However, the operators primiarily
+                                used images from the lander's IMP camera system, as it had higher quality on top of
+                                having a height advantage over the rover.
                             </li>
                         </ul>
                     </b-col>
                     <b-col md="6" xl="5" align-h="top" class="w-100 h-100">
-                        <h2>Autonomy</h2>
+                        <h3>Autonomy</h3>
                         <p class="ml-3 ml-xl-4">
                             Sojourner was an important step in Robotics due to the nature of the mission.
                             With such a long distance between Mars and Earth, radio communications took around 14
@@ -133,7 +130,7 @@
             <b-jumbotron fluid container-fluid class="bg-black my-0 py-md-5 py-sm-0 px-md-5 px-sm-3">
                 <b-row class="px-sm-3 px-md-3 w-100" align-h="around">
                     <b-col md="6" xl="5" align-self="center">
-                        <h2>Autonomy</h2>
+                        <h3>Autonomy</h3>
                         <p class="ml-3 ml-xl-4">
                             Sojourner was an important step in Robotics due to the nature of the mission.
                             With such a long distance between Mars and Earth, radio communications took around 14
@@ -155,7 +152,7 @@
                         </p>
                     </b-col>
                     <b-col md="6" xl="5" align-h="center" class="w-100 h-100">
-                        <h2>Communications</h2>
+                        <h3>Communications</h3>
                         <p class="ml-4">
                             Sojourner is unique among the 4 rovers to successfully deploy on Mars in that it required
                             it's lander to stay in communication with Earth. The rover was not equipped with a high gain
@@ -166,11 +163,10 @@
                             throughout
                             it's lifetime on Mars, it never traveled more than a few dozen feet from the lander.
                         </p>
-                        <h2>Tools</h2>
+                        <h3>Tools</h3>
                         <p class="ml-4">
                             Sojourner was designed to study the surface of Mars by collecting and analyzing rock
-                            samples,
-                            taking pictures and more.
+                            samples, taking pictures and more.
                         </p>
                     </b-col>
                 </b-row>
@@ -185,27 +181,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 @import "./scss/_variables.scss";
 @import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/_mixins';
 
 html {
-  font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 @include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
+    html {
+        font-size: 0.9rem;
+    }
 }
 
 @include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
+    html {
+        font-size: 1.1rem;
+    }
 }
 
 @include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.6rem;
-  }
+    html {
+        font-size: 1.2rem;
+    }
 }
 
 .jumbotron {
@@ -273,7 +270,6 @@ html, body {
     color: $white;
     max-width: 100%;
     overflow-x: hidden;
-    font-size: 1em;
 }
 </style>
 
