@@ -22,8 +22,8 @@
         </b-navbar>
         <div id="content" ref="content">
             <b-jumbotron fluid container-fluid="fluid" class="text-dark my-0 py-md-5 py-sm-0 px-md-5 px-sm-3">
-                <b-row class="px-sm-3 px-md-3 w-100" align-h="around">
-                    <b-col cols="12" xl="8" align-self="center">
+                <b-row class="px-sm-3 px-md-3 w-100" align-h="between">
+                    <b-col cols="12" lg="8" align-self="center">
                         <h1 id="sojourner">
                             Sojourner
                         </h1>
@@ -41,14 +41,14 @@
                             blueprint for 3 more rovers.
                         </p>
                     </b-col>
-                    <b-col cols="8" lg="4" xl="4" align-self="center" class="w-100 h-100">
+                    <b-col cols="8" lg="4" xl="3" align-self="center" class="w-100 h-100">
                         <b-img fluid-grow src="./assets/sojourner.jpg"></b-img>
                     </b-col>
                 </b-row>
             </b-jumbotron>
-            <b-jumbotron fluid container-fluid="fluid px-0" class="bg-black my-0 py-md-5 py-sm-0 px-xl-2 px-md-1 px-sm-3">
+            <b-jumbotron fluid container-fluid="fluid px-0" class="bg-black my-0 py-md-5 py-0 px-3 px-md-1 px-xl-2">
                 <b-row class="px-sm-3 px-md-3 w-100" align-h="around">
-                    <b-col cols="8" xl="7" align-self="top">
+                    <b-col cols="8" lg="7" align-self="top">
                         <h3>Communications</h3>
                         <p class="ml-4">
                             Sojourner is unique among the 4 rovers to successfully deploy on Mars in that it required
@@ -81,23 +81,23 @@
                             </li>
                         </ul>
                     </b-col>
-                    <b-col md="6" xl="5" align-h="top" class="w-100 h-100">
+                    <b-col md="6" lg="5" align-h="top" class="w-100 h-100">
                         <h3>Autonomy</h3>
-                        <p class="ml-3 ml-xl-4">
+                        <p class="ml-3 ml-lg-4">
                             Sojourner was an important step in Robotics due to the nature of the mission.
                             With such a long distance between Mars and Earth, radio communications took around 14
                             minutes to receive, and then another 14 minutes to send back.
                         </p>
-                        <p class="ml-3 ml-xl-4">
+                        <p class="ml-3 ml-lg-4">
                             As such, human telegraphed movements too slow for the mission, and while complete autopilot
                             is impossible for such a complex mission, the rovers, landers, and spacecraft made by NASA
                             had to be programmer with autopilot.
                         </p>
-                        <p class="ml-3 ml-xl-4">
+                        <p class="ml-3 ml-lg-4">
                             To solve this problem, Sojourner, along with every rover to land on Mars, is equipped with
                             software dedicated to autonomously moving the rover across the martian surface.
                         </p>
-                        <p class="ml-3 ml-xl-4">
+                        <p class="ml-3 ml-lg-4">
                             While Sojourner was comparatively basic in it's software's autonomy, the software was
                             helpful to operators in visualizing and telegraphing instructions across the rocky terrain
                             of Ares Vallis.
@@ -107,10 +107,10 @@
             </b-jumbotron>
             <b-jumbotron fluid container-fluid class="text-dark my-0 py-md-5 py-sm-0 px-md-5 px-sm-3">
                 <b-row class="w-100" align-h="around">
-                    <b-col cols="8" xl="4" align-self="center">
+                    <b-col cols="8" lg="4" align-self="center">
                         <b-img fluid-grow class="shadow-lg" src="./assets/spirit.jpg"></b-img>
                     </b-col>
-                    <b-col class="ml-n5 pl-xl-5" cols="12" xl="7" align-self="top">
+                    <b-col class="ml-n5 pl-lg-5" cols="12" lg="7" align-self="top">
                         <h1 id="spirit">
                             Spirit
                         </h1>
@@ -134,9 +134,9 @@
                     </b-col>
                 </b-row>
             </b-jumbotron>
-            <b-jumbotron fluid container-fluid="fluid px-0" class="bg-black my-0 py-md-5 py-sm-0 px-xl-2 px-md-1 px-sm-3">
+            <b-jumbotron fluid container-fluid="fluid px-0" class="bg-black my-0 py-md-5 py-0 px-3 px-md-1 px-xl-2">
                 <b-row class="px-sm-3 px-md-3 w-100" align-h="around">
-                    <b-col cols="8" xl="7" align-self="top">
+                    <b-col cols="8" lg="7" align-self="top">
                         <h3>Communications</h3>
                         <p class="ml-4">
                             Sojourner is unique among the 4 rovers to successfully deploy on Mars in that it required
@@ -154,38 +154,38 @@
                             samples, taking pictures and more using the following tools:
                         </p>
                         <ul>
-                            <li>
+                            <li class="py-1 pt-2">
                                 An <abbr title="Alpha Proton X-ray Spectrometer"><em>APXS</em></abbr> for determining
                                 elemental composition of soil, rocks and other materials on the surface of Mars.
                             </li>
-                            <li>
+                            <li class="py-1">
                                 <em>Rover Control Software</em> for coordinating movement, studying terrain features,
                                 and viewing the nearby area in 3D space.
                             </li>
-                            <li>
+                            <li class="py-1">
                                 <em>Three cameras</em>, one color, two monochrome. However, the operators primiarily
                                 used images from the lander's IMP camera system, as it had higher quality on top of
                                 having a height advantage over the rover.
                             </li>
                         </ul>
                     </b-col>
-                    <b-col md="6" xl="5" align-h="top" class="w-100 h-100">
+                    <b-col md="6" lg="5" align-h="top" class="w-100 h-100">
                         <h3>Autonomy</h3>
-                        <p class="ml-3 ml-xl-4">
+                        <p class="ml-3 ml-lg-4">
                             Sojourner was an important step in Robotics due to the nature of the mission.
                             With such a long distance between Mars and Earth, radio communications took around 14
                             minutes to receive, and then another 14 minutes to send back.
                         </p>
-                        <p class="ml-3 ml-xl-4">
+                        <p class="ml-3 ml-lg-4">
                             As such, human telegraphed movements too slow for the mission, and while complete autopilot
                             is impossible for such a complex mission, the rovers, landers, and spacecraft made by NASA
                             had to be programmer with autopilot.
                         </p>
-                        <p class="ml-3 ml-xl-4">
+                        <p class="ml-3 ml-lg-4">
                             To solve this problem, Sojourner, along with every rover to land on Mars, is equipped with
                             software dedicated to autonomously moving the rover across the martian surface.
                         </p>
-                        <p class="ml-3 ml-xl-4">
+                        <p class="ml-3 ml-lg-4">
                             While Sojourner was comparatively basic in it's software's autonomy, the software was
                             helpful to operators in visualizing and telegraphing instructions across the rocky terrain
                             of Ares Vallis.
@@ -202,8 +202,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 @import "./scss/_variables.scss";
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 456px,
+  md: 789px,
+  lg: 900px,
+  xl: 1450px
+);
+
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap/scss/_mixins';
+@import '~bootstrap-vue/src/index.scss';
 
 html {
     font-size: 0.8rem;
