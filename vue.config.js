@@ -1,6 +1,6 @@
 module.exports = {
     outputDir: './docs/',
-    publicPath: '/history-of-robotics/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/history-of-robotics/' : '/',
     chainWebpack: config => {
         config.module
             .rule('vue')
