@@ -14,7 +14,7 @@
                     Spirit
                 </b-nav-item>
                 <b-nav-item class="float-right" link-classes="open-sans text-white font-weight-bold" v-if="showBreakpoint">
-                    <span id="marker-xs" class="d-sm-none">SM</span>
+                    <span id="marker-xs" class="d-sm-none">XS</span>
                     <span id="marker-sm" class="d-none d-sm-inline d-md-none">SM</span>
                     <span id="marker-md" class="d-none d-md-inline d-lg-none">MD</span>
                     <span id="marker-lg" class="d-none d-lg-inline d-xl-none">LG</span>
@@ -48,7 +48,7 @@
                     </b-col>
                 </b-row>
             </b-jumbotron>
-            <b-jumbotron fluid container-fluid="fluid px-0" class="bg-black my-0 py-md-5 py-0 px-3 px-md-1 px-lg-2">
+            <b-jumbotron fluid container-fluid="fluid px-0" class="bg-black py-md-5 py-0 px-3 px-md-1 px-lg-2">
                 <b-row class="px-sm-3 px-md-3 w-100" align-h="around">
                     <b-col cols="8" lg="6" align-self="top">
                         <h3>Communications</h3>
@@ -216,24 +216,30 @@ $grid-breakpoints: (
 @import '~bootstrap-vue/src/index.scss';
 
 html {
-    font-size: 0.8rem;
+    font-size: 12px;
 }
 
 @include media-breakpoint-up(sm) {
     html {
-        font-size: 0.9rem;
+        font-size: 12px;
     }
 }
 
 @include media-breakpoint-up(md) {
     html {
-        font-size: 1.0rem;
+        font-size: 14px;
     }
 }
 
 @include media-breakpoint-up(lg) {
     html {
-        font-size: 1.1rem;
+        font-size: 16px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    html {
+        font-size: 18px;
     }
 }
 
@@ -257,6 +263,9 @@ abbr {
 
 .navbar {
     @extend .bg-black;
+    + #content {
+        margin-top: 2.5em;
+    }
 }
 
 .jumbotron h1 {
