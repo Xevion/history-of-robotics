@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "./_variables.scss";
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 456px,
+    md: 689px,
+    lg: 900px,
+    xl: 1450px
+);
+
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/_mixins';
+@import '~bootstrap-vue/src/index.scss';
+
+html {
+    font-size: 12px;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    html {
+        font-size: 18px;
+    }
+}
+
+.jumbotron {
+    color: $white;
+
+    p, li {
+        @extend .open-sans;
+        font-size: 1.3em;
+    }
+}
+
+abbr {
+    text-decoration-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.bg-black {
+    background-color: $primary;
+    color: $white;
+}
+
+.badge-dark {
+    background-color: lighten($primary, 9%);
+}
+
+.navbar {
+    @extend .bg-black;
+
+    + #content {
+        margin-top: 3.225em;
+    }
+}
+
+.jumbotron h1 {
+    @extend .exo-2;
+    font-size: 2.1em;
+}
+
+.carousel-caption {
+    bottom: -10px;
+}
+
+.carousel-caption {
+    width: 100%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .45);
+    padding-top: 1rem;
+    left: 0;
+}
+
+a {
+    text-align: center;
+
+    &:hover {
+        color: #b0b0b0;
+    }
+}
+
+#marker-xs {
+    color: #ff0000;
+}
+
+#marker-sm {
+    color: #f37506;
+}
+
+#marker-md {
+    color: #0090ff;
+}
+
+#marker-lg {
+    color: #05ff80;
+}
+
+#marker-xl {
+    color: #82f500;
+}
+
+.exo-2 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-brand, .nav-link {
+    font-size: 1.2em;
+    color: $white;
+}
+
+html, body {
+    background-color: $primary;
+    color: $white;
+    max-width: 100%;
+    overflow-x: hidden;
+}
