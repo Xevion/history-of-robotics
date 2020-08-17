@@ -89,14 +89,6 @@ abbr {
     left: 0;
 }
 
-a {
-    text-align: center;
-
-    &:hover {
-        color: #b0b0b0;
-    }
-}
-
 #marker-xs {
     color: #ff0000;
 }
@@ -132,7 +124,22 @@ a {
 
 html, body {
     background-color: $primary;
-    color: $white;
     max-width: 100%;
     overflow-x: hidden;
+    color: $white;
+    a {
+        color: #007bff;
+    }
+}
+
+.sources a {
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sources {
+    font-size: 0.9em;
 }

@@ -7,7 +7,8 @@
                 </h3>
             </b-navbar-brand>
             <b-navbar-nav>
-                <b-nav-item link-classes="open-sans text-white font-weight-bold p-0" class="d-flex" v-if="showBreakpoint">
+                <b-nav-item link-classes="open-sans text-white font-weight-bold p-0" class="d-flex"
+                            v-if="showBreakpoint">
                     <b-badge variant="dark">
                         <span id="marker-xs" class="d-sm-none">XS</span>
                         <span id="marker-sm" class="d-none d-sm-block d-md-none">SM</span>
@@ -192,6 +193,37 @@
                             While Sojourner was comparatively basic in it's software's autonomy, the software was
                             helpful to operators in visualizing and telegraphing instructions across the rocky terrain
                             of Ares Vallis.
+                        </p>
+                    </b-col>
+                </b-row>
+            </b-jumbotron>
+            <b-jumbotron fluid container-fluid="fluid px-0" class="sources text-dark py-3 py-md-4 py-lg-5 mb-0 pb-0 px-2 px-md-2 px-lg-3">
+                <h3 class="text-center">
+                    Sources
+                </h3>
+                <b-row class="px-3 pl-4 px-md-4 w-100 justify-content-center justify-content-lg-around">
+                    <b-col cols="12" lg="6">
+                        <p>
+                            "Mars Pathfinder FAQs - Sojourner"
+                            <br>
+                            <a class="pl-4" href="https://mars.nasa.gov/MPF/rover/faqs_sojourner.html">https://mars.nasa.gov/MPF/rover/faqs_sojourner.html</a>
+                        </p>
+                        <p>
+                            "A Description of the Rover Sojourner"
+                            <br>
+                            <a class="pl-4" href="https://mars.nasa.gov/MPF/rover/descrip.html">https://mars.nasa.gov/MPF/rover/descrip.html</a>
+                        </p>
+                        <p>
+                            "Mars Pathfinder Instrument Descriptions"
+                            <br>
+                            <a class="pl-4" href="https://mars.nasa.gov/MPF/mpf/sci_desc.html">https://mars.nasa.gov/MPF/mpf/sci_desc.html</a>
+                        </p>
+                    </b-col>
+                    <b-col cols="12" lg="6">
+                        <p>
+                            "In-situ Exploration and Sample Return: Autonomous Planetary Mobility"
+                            <br>
+                            <a class="pl-4" href="https://mars.nasa.gov/mer/mission/technology/autonomous-planetary-mobility/">https://mars.nasa.gov/mer/mission/technology/autonomous-planetary-mobility/</a>
                         </p>
                     </b-col>
                 </b-row>
