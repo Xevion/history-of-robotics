@@ -1,8 +1,10 @@
 <template>
     <div id="app">
-        <b-navbar sticky fixed=true>
-            <b-navbar-brand class="px-2 pl-3 exo-2 font-weight-normal text-white" style="font-size: 1.5em;">
-                Sojourner & Spirit
+        <b-navbar class="header py-0" fixed="top">
+            <b-navbar-brand class="px-2 pl-3 exo-2 font-weight-normal text-white">
+                <h3>
+                    Sojourner & Spirit
+                </h3>
             </b-navbar-brand>
             <b-navbar-nav v-b-scrollspy:content>
                 <b-nav-item href="#sojourner" link-classes="open-sans text-white" @click="scrollIntoView">
@@ -12,11 +14,11 @@
                     Spirit
                 </b-nav-item>
                 <b-nav-item class="float-right" link-classes="open-sans text-white font-weight-bold" v-if="showBreakpoint">
-                    <span class="d-sm-none" style="text-decoration: line-through;">SM</span>
-                    <span class="d-none d-sm-inline d-md-none">SM</span>
-                    <span class="d-none d-md-inline d-lg-none">MD</span>
-                    <span class="d-none d-lg-inline d-xl-none">LG</span>
-                    <span class="d-none d-xl-inline">XL</span>
+                    <span id="marker-xs" class="d-sm-none">SM</span>
+                    <span id="marker-sm" class="d-none d-sm-inline d-md-none">SM</span>
+                    <span id="marker-md" class="d-none d-md-inline d-lg-none">MD</span>
+                    <span id="marker-lg" class="d-none d-lg-inline d-xl-none">LG</span>
+                    <span id="marker-xl" class="d-none d-xl-inline">XL</span>
                 </b-nav-item>
             </b-navbar-nav>
         </b-navbar>
@@ -46,9 +48,9 @@
                     </b-col>
                 </b-row>
             </b-jumbotron>
-            <b-jumbotron fluid container-fluid="fluid px-0" class="bg-black my-0 py-md-5 py-0 px-3 px-md-1 px-xl-2">
+            <b-jumbotron fluid container-fluid="fluid px-0" class="bg-black my-0 py-md-5 py-0 px-3 px-md-1 px-lg-2">
                 <b-row class="px-sm-3 px-md-3 w-100" align-h="around">
-                    <b-col cols="8" lg="7" align-self="top">
+                    <b-col cols="8" lg="6" align-self="top">
                         <h3>Communications</h3>
                         <p class="ml-4">
                             Sojourner is unique among the 4 rovers to successfully deploy on Mars in that it required
@@ -110,7 +112,7 @@
                     <b-col cols="8" lg="4" align-self="center">
                         <b-img fluid-grow class="shadow-lg" src="./assets/spirit.jpg"></b-img>
                     </b-col>
-                    <b-col class="ml-n5 pl-lg-5" cols="12" lg="7" align-self="top">
+                    <b-col class="ml-n5 pl-lg-5" cols="12" lg="7" align-self="center">
                         <h1 id="spirit">
                             Spirit
                         </h1>
@@ -128,8 +130,6 @@
                         <p class="ml-4">
                             Spirit was planned with just a 90 day mission in mind, but like it's twin, Spirit outlasted
                             this cycle far beyond what was originally planned.
-                        </p>
-                        <p class="ml-4">
                         </p>
                     </b-col>
                 </b-row>
@@ -283,6 +283,12 @@ a {
         color: #b0b0b0;
     }
 }
+
+#marker-xs { color: red; }
+#marker-sm { color: purple; }
+#marker-md { color: blue; }
+#marker-lg { color: teal; }
+#marker-xl { color: lightgreen; }
 
 .exo-2 {
     font-family: 'Exo 2', sans-serif;
