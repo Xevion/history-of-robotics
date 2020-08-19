@@ -18,6 +18,11 @@
                     </b-badge>
                 </b-nav-item>
             </b-navbar-nav>
+            <b-navbar-brand class="ml-auto">
+                <a href="https://github.com/Xevion/history-of-robotics" target="_blank" v-b-popover.hover.top="'GitHub Source Code'">
+                    <font-awesome-icon :icon="['fab', 'github-square']" size="lg" :style="{color: 'white'}"/>
+                </a>
+            </b-navbar-brand>
         </b-navbar>
         <div id="content" ref="content">
             <b-jumbotron fluid container-fluid="fluid" class="text-dark py-3 px-md-5 px-sm-3">
@@ -294,7 +299,8 @@
                         <p>
                             "From Sojourner to Curiosity: A Mars Rover Family Portrait"
                             <br>
-                            <a class="pl-4" href="https://www.theatlantic.com/technology/archive/2012/08/from-sojourner-to-curiosity-a-mars-rover-family-portrait/260779/">
+                            <a class="pl-4"
+                               href="https://www.theatlantic.com/technology/archive/2012/08/from-sojourner-to-curiosity-a-mars-rover-family-portrait/260779/">
                                 https://www.theatlantic.com/technology/archive/2012/08/from-sojourner-to-curiosity-a-mars-rover-family-portrait/260779/
                             </a>
                         </p>

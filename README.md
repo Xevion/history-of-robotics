@@ -6,8 +6,8 @@ See [History of Robotics](https://xevion.github.io/history-of-robotics/).
 
 ## About
 
-This is a school project, not meant to be a literal article or historically accurate recollection of the Sojourner
-and Spirit rovers.
+This is a school project, so I urge you to rely on your own research for topics like this, don't take this as a super accurate take on the
+history of NASA's Sojourner & Spirit rovers.
 
 ## GitHub Pages Deployment
 
