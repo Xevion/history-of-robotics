@@ -141,63 +141,96 @@
             <b-jumbotron fluid container-fluid="fluid px-0" class="bg-black py-md-5 py-0 px-2 px-md-2 px-lg-3">
                 <b-row class="px-3 pl-4 px-md-4 w-100 justify-content-center justify-content-lg-around">
                     <b-col cols="12" lg="6" align-self="top">
-                        <h3>Communications</h3>
+                        <h3>Geology</h3>
                         <p class="ml-4 ml-sm-3">
-                            Sojourner is unique among the 4 rovers to successfully deploy on Mars in that it required
-                            it's lander to stay in communication with Earth. The rover was not equipped with a high gain
-                            antenna, which is required in order to communicate with Earth over large distances.
-                        </p>
-                        <p class="ml-4 ml-sm-3">
-                            This limitation forced the rover to stay within a certain range of the lander, and
-                            throughout it's lifetime on Mars, it never traveled more than a few dozen feet from the
-                            lander.
-                        </p>
-                        <h3>Tools</h3>
-                        <p class="ml-4 ml-sm-3">
-                            Sojourner was designed to study the surface of Mars by collecting and analyzing rock
-                            samples, taking pictures and more using the following tools:
+                            Spirit was equipped with all of the tools necessary to complete much more advanced
+                            geological
+                            inspections and discoveries during it's 90-sol mission. Some tools were made to assist with
+                            making smarter choices for what to inspect, and some tools were made to make better
+                            analyses.
                         </p>
                         <ul class="ml-3 ml-lg-4">
                             <li class="py-1 pt-2">
-                                An <abbr title="Alpha Proton X-ray Spectrometer"><em>APXS</em></abbr> for determining
-                                elemental composition of soil, rocks and other materials on the surface of Mars.
-                            </li>
-                            <li class="py-1">
-                                <em>Rover Control Software</em> for coordinating movement, studying terrain features,
-                                and viewing the nearby area in 3D space.
-                            </li>
-                            <li class="py-1">
-                                <em>Three cameras</em>, one color, two monochrome. However, the operators primarily
-                                used images from the lander's IMP camera system, as it had higher quality on top of
-                                having a height advantage over the rover.
+                                Several cameras for different situations and identifying different kinds of things.
+                                <ul>
+                                    <li class="py-1">
+                                        A <abbr title="Panoramic Camera">Pancam</abbr> for photographing a wide
+                                        (panoramic) color view of the Martian terrain. Produces the highest quality
+                                        photos which can be pieced together to create expansive 360 degree collages.
+                                    </li>
+                                    <li class="py-1">
+                                        A <abbr title="Navigational Camera">Navcam</abbr> for quickly transmitting lower
+                                        quality monochrome photos at a higher efficiency, typically used in conjunction
+                                        with making navigation choices.
+                                    </li>
+                                    <li class="py-1">
+                                        <abbr title="Hazard Avoidance Cameras">Hazcams</abbr>, 2 monochrome cameras,
+                                        with 120 degree view angles. Cameras were used generally to support automated
+                                        navigation, plan robotic arm movements, and acquire additional imagery of the
+                                        martian terrain and landscape close to the rover.
+                                    </li>
+                                    <li class="py-1">
+                                        A <abbr title="Minature Thermal Emission Spectrometer">Mini-TES</abbr> used to
+                                        survey rock and soil terrain from a distance, possibly saving scientists
+                                        hundreds
+                                        of hours on uninteresting experiments.
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </b-col>
                     <b-col cols="12" lg="5" align-h="top" class="w-100 h-100">
-                        <h3>Autonomy</h3>
+                        <ul>
+                            <li>
+                                A robotic arm equipped with multiple tools aimed at directly interacting with and
+                                analyzing the soil and rock on Mars.
+                                <ul>
+                                    <li class="py-1">
+                                        Just like Sojourner, Spirit was equipped with a
+                                        <abbr title="Alpha Proton X-ray Spectrometer"><em>APXS</em></abbr>
+                                        for close up analysis of the elemental composition of rocks and soil.
+                                    </li>
+                                    <li>
+                                        A <em>Mössbauer spectrometer</em> used to analyze the composition of
+                                        iron-bearing rocks and soil.
+                                    </li>
+                                    <li>
+                                        <em>Rock Abrasion Tool</em> (RAT) for exposing rock underneath the outer layer
+                                        (a drill).
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h3>Chassis/Body/Frame</h3>
                         <p class="ml-4 ml-sm-3">
-                            Sojourner was an important step in Robotics due to the nature of the mission.
-                            With such a long distance between Mars and Earth, radio communications took around 14
-                            minutes to receive, and then another 14 minutes to send back.
+                            Each Rover that lands on Mars gets bigger and better - Spirit and Opportunity were the first
+                            to show Sojourner this, their dimensions beating Sojourner in each axis by 5 (minimum).
+                            Solar panels, wheels, and the tools at their disposal increased too.
                         </p>
-                        <p class="ml-4 ml-sm-3">
-                            As such, human telegraphed movements too slow for the mission, and while complete autopilot
-                            is impossible for such a complex mission, the rovers, landers, and spacecraft made by NASA
-                            had to be programmer with autopilot.
-                        </p>
-                        <p class="ml-4 ml-sm-3">
-                            To solve this problem, Sojourner, along with every rover to land on Mars, is equipped with
-                            software dedicated to autonomously moving the rover across the martian surface.
-                        </p>
-                        <p class="ml-4 ml-sm-3">
-                            While Sojourner was comparatively basic in it's software's autonomy, the software was
-                            helpful to operators in visualizing and telegraphing instructions across the rocky terrain
-                            of Ares Vallis.
-                        </p>
+<!--                        <h3>Communication</h3>-->
+<!--                        <p class="ml-4 ml-sm-3">-->
+<!--                            Spirit broke free from the loose tether that Sojourner had previously, leaving it's lander behind using-->
+<!--                            it's own 3 different radios:-->
+<!--                        </p>-->
+<!--                        <ul class="ml-3 ml-lg-4">-->
+<!--                            <li class="py-1 pt-2">-->
+<!--                                <em>Ultra-High Frequency Antenna</em>, for relaying information through orbiters around Mars. High throughput.-->
+<!--                            </li>-->
+<!--                            <li class="py-1">-->
+<!--                                <em>X-band High-Gain Antenna</em>, for relaying information directly to Earth.-->
+<!--                                The antenna rotated itself for a more effective, focused connection. Medium throughput.-->
+<!--                            </li>-->
+<!--                            <li class="py-1">-->
+<!--                                <em>X-band Low-Gain Antenna</em>, used as a robust alternative radio. As a Low-Gain Antenna, it lacked speed,-->
+<!--                                but made up for it with it's omni-directional capability, not requiring the antenna or rover-->
+<!--                                to rotate in order for Earth's Deep Space Network to receive it's signals.-->
+<!--                            </li>-->
+<!--                        </ul>-->
                     </b-col>
                 </b-row>
             </b-jumbotron>
-            <b-jumbotron fluid container-fluid="fluid px-0" class="sources text-dark py-3 py-md-4 py-lg-5 mb-0 pb-0 px-2 px-md-2 px-lg-3">
+            <b-jumbotron fluid container-fluid="fluid px-0"
+                         class="sources text-dark py-3 py-md-4 py-lg-5 mb-0 pb-0 px-2 px-md-2 px-lg-3">
                 <h3 class="text-center">
                     Sources
                 </h3>
@@ -223,7 +256,8 @@
                         <p>
                             "In-situ Exploration and Sample Return: Autonomous Planetary Mobility"
                             <br>
-                            <a class="pl-4" href="https://mars.nasa.gov/mer/mission/technology/autonomous-planetary-mobility/">https://mars.nasa.gov/mer/mission/technology/autonomous-planetary-mobility/</a>
+                            <a class="pl-4"
+                               href="https://mars.nasa.gov/mer/mission/technology/autonomous-planetary-mobility/">https://mars.nasa.gov/mer/mission/technology/autonomous-planetary-mobility/</a>
                         </p>
                     </b-col>
                 </b-row>
