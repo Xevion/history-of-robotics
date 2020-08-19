@@ -207,25 +207,25 @@
                             to show Sojourner this, their dimensions beating Sojourner in each axis by 5 (minimum).
                             Solar panels, wheels, and the tools at their disposal increased too.
                         </p>
-<!--                        <h3>Communication</h3>-->
-<!--                        <p class="ml-4 ml-sm-3">-->
-<!--                            Spirit broke free from the loose tether that Sojourner had previously, leaving it's lander behind using-->
-<!--                            it's own 3 different radios:-->
-<!--                        </p>-->
-<!--                        <ul class="ml-3 ml-lg-4">-->
-<!--                            <li class="py-1 pt-2">-->
-<!--                                <em>Ultra-High Frequency Antenna</em>, for relaying information through orbiters around Mars. High throughput.-->
-<!--                            </li>-->
-<!--                            <li class="py-1">-->
-<!--                                <em>X-band High-Gain Antenna</em>, for relaying information directly to Earth.-->
-<!--                                The antenna rotated itself for a more effective, focused connection. Medium throughput.-->
-<!--                            </li>-->
-<!--                            <li class="py-1">-->
-<!--                                <em>X-band Low-Gain Antenna</em>, used as a robust alternative radio. As a Low-Gain Antenna, it lacked speed,-->
-<!--                                but made up for it with it's omni-directional capability, not requiring the antenna or rover-->
-<!--                                to rotate in order for Earth's Deep Space Network to receive it's signals.-->
-<!--                            </li>-->
-<!--                        </ul>-->
+                        <!--                        <h3>Communication</h3>-->
+                        <!--                        <p class="ml-4 ml-sm-3">-->
+                        <!--                            Spirit broke free from the loose tether that Sojourner had previously, leaving it's lander behind using-->
+                        <!--                            it's own 3 different radios:-->
+                        <!--                        </p>-->
+                        <!--                        <ul class="ml-3 ml-lg-4">-->
+                        <!--                            <li class="py-1 pt-2">-->
+                        <!--                                <em>Ultra-High Frequency Antenna</em>, for relaying information through orbiters around Mars. High throughput.-->
+                        <!--                            </li>-->
+                        <!--                            <li class="py-1">-->
+                        <!--                                <em>X-band High-Gain Antenna</em>, for relaying information directly to Earth.-->
+                        <!--                                The antenna rotated itself for a more effective, focused connection. Medium throughput.-->
+                        <!--                            </li>-->
+                        <!--                            <li class="py-1">-->
+                        <!--                                <em>X-band Low-Gain Antenna</em>, used as a robust alternative radio. As a Low-Gain Antenna, it lacked speed,-->
+                        <!--                                but made up for it with it's omni-directional capability, not requiring the antenna or rover-->
+                        <!--                                to rotate in order for Earth's Deep Space Network to receive it's signals.-->
+                        <!--                            </li>-->
+                        <!--                        </ul>-->
                     </b-col>
                 </b-row>
             </b-jumbotron>
@@ -251,13 +251,52 @@
                             <br>
                             <a class="pl-4" href="https://mars.nasa.gov/MPF/mpf/sci_desc.html">https://mars.nasa.gov/MPF/mpf/sci_desc.html</a>
                         </p>
-                    </b-col>
-                    <b-col cols="12" lg="6">
                         <p>
                             "In-situ Exploration and Sample Return: Autonomous Planetary Mobility"
                             <br>
                             <a class="pl-4"
                                href="https://mars.nasa.gov/mer/mission/technology/autonomous-planetary-mobility/">https://mars.nasa.gov/mer/mission/technology/autonomous-planetary-mobility/</a>
+                        </p>
+                    </b-col>
+                    <b-col cols="12" lg="6">
+                        <p>
+                            "Miniature Thermal Emission Spectrometer (Mini-TES)"
+                            <br>
+                            <a class="pl-4"
+                               href="https://archive.is/20120711083846/http://marsrovers.jpl.nasa.gov/mission/spacecraft_instru_minites.html">
+                                https://archive.is/20120711083846/http://marsrovers.jpl.nasa.gov/mission/spacecraft_instru_minites.html
+                            </a>
+                        </p>
+                        <p>
+                            "Science Instruments: In-situ Instrumentation"
+                            <br>
+                            <a class="pl-4"
+                               href="https://archive.is/20120710152502/http://marsrovers.jpl.nasa.gov/technology/si_in_situ_instrumentation.html#selection-450.0-465.44">
+                                https://archive.is/20120710152502/http://marsrovers.jpl.nasa.gov/technology/si_in_situ_instrumentation.html#selection-450.0-465.44
+                            </a>
+                        </p>
+                        <p>
+                            "Hazard Avoidance Camera (Hazcam)"
+                            <br>
+                            <a class="pl-4"
+                               href="https://archive.is/20180808054238/http://an.rsl.wustl.edu/mer/help/Content/About%20the%20mission/MSL/Instruments/MSL%20Hazcam.htm">
+                                https://archive.is/20180808054238/http://an.rsl.wustl.edu/mer/help/Content/About%20the%20mission/MSL/Instruments/MSL%20Hazcam.htm
+                            </a>
+                        </p>
+                        <p>
+                            "The rover's 'eyes' and other 'senses'"
+                            <br>
+                            <a class="pl-4"
+                               href="https://archive.is/20130217144603/http://marsrover.nasa.gov/mission/spacecraft_rover_eyes.html#selection-650.5-679.37">
+                                https://archive.is/20130217144603/http://marsrover.nasa.gov/mission/spacecraft_rover_eyes.html#selection-650.5-679.37
+                            </a>
+                        </p>
+                        <p>
+                            "From Sojourner to Curiosity: A Mars Rover Family Portrait"
+                            <br>
+                            <a class="pl-4" href="https://www.theatlantic.com/technology/archive/2012/08/from-sojourner-to-curiosity-a-mars-rover-family-portrait/260779/">
+                                https://www.theatlantic.com/technology/archive/2012/08/from-sojourner-to-curiosity-a-mars-rover-family-portrait/260779/
+                            </a>
                         </p>
                     </b-col>
                 </b-row>
