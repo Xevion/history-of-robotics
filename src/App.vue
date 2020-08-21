@@ -19,7 +19,8 @@
                 </b-nav-item>
             </b-navbar-nav>
             <b-navbar-brand class="ml-auto">
-                <a href="https://github.com/Xevion/history-of-robotics" target="_blank" v-b-popover.hover.top="'GitHub Source Code'">
+                <a href="https://github.com/Xevion/history-of-robotics" target="_blank"
+                   v-b-popover.hover.top="'GitHub Source Code'">
                     <font-awesome-icon :icon="['fab', 'github-square']" size="lg" :style="{color: 'white'}"/>
                 </a>
             </b-navbar-brand>
@@ -85,7 +86,7 @@
                             <li class="py-1">
                                 <em>Three cameras</em>, one color, two monochrome. However, the operators primarily
                                 used images from the lander's IMP camera system, as it had higher quality on top of
-                                having a height advantage over the rover.
+                                having a height advantage over the rover, which always kept close to the lander.
                             </li>
                         </ul>
                     </b-col>
@@ -98,8 +99,8 @@
                         </p>
                         <p class="ml-4 ml-sm-3">
                             As such, human telegraphed movements too slow for the mission, and while complete autopilot
-                            is impossible for such a complex mission, the rovers, landers, and spacecraft made by NASA
-                            had to be programmer with autopilot.
+                            is impossible for such a complex mission, the rovers, landers, and spacecraft engineered by
+                            NASA had to be programmed with autopilot.
                         </p>
                         <p class="ml-4 ml-sm-3">
                             To solve this problem, Sojourner, along with every rover to land on Mars, is equipped with
@@ -209,8 +210,8 @@
                         <h3>Chassis/Body/Frame</h3>
                         <p class="ml-4 ml-sm-3">
                             Each Rover that lands on Mars gets bigger and better - Spirit and Opportunity were the first
-                            to show Sojourner this, their dimensions beating Sojourner in each axis by 5 (minimum).
-                            Solar panels, wheels, and the tools at their disposal increased too.
+                            to show Sojourner this, their dimensions beating Sojourner in each axis by 5 to 1 (minimum).
+                            Solar panels, wheels, and the number of tools at their disposal increased too.
                         </p>
                         <!--                        <h3>Communication</h3>-->
                         <!--                        <p class="ml-4 ml-sm-3">-->
