@@ -3,7 +3,7 @@
         <b-navbar class="header py-0" fixed="top">
             <b-navbar-brand class="px-2 pl-3 exo-2 font-weight-normal text-white">
                 <h3>
-                    Sojourner & Spirit
+                    Sojourner & Spirit <span class="h6">by Ryan Walters</span>
                 </h3>
             </b-navbar-brand>
             <b-navbar-nav>
